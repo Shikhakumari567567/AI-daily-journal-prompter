@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Daily Journal Prompter</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <div class="icon">📖</div>
+
+    <h1>Daily Journal</h1>
+    <p class="subtitle">
+      Take a moment for yourself. Reflect, grow, and begin again.
+    </p>
+
+    <label for="mood">How are you feeling today?</label>
+
+    <select id="mood">
+      <option value="">Choose your mood</option>
+      <option value="happy">😊 Happy</option>
+      <option value="stressed">😟 Stressed</option>
+      <option value="curious">🤔 Curious</option>
+      <option value="sad">😔 Sad</option>
+      <option value="grateful">🙏 Grateful</option>
+      <option value="excited">🎉 Excited</option>
+      <option value="confused">😕 Confused</option>
+      <option value="calm">😌 Calm</option>
+    </select>
+
+    <button id="generateBtn" type="button">
+      Generate Journal Prompt
+    </button>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <section id="result" hidden>
+      <h2>Your Journal Prompt</h2>
+      <p id="promptText"></p>
+    </section>
+
+    <p class="footer">One small reflection can make a difference.</p>
+  </main>
+</body>
+</html>
